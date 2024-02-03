@@ -24,7 +24,23 @@
                 @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
             </div>
+            
+            @Html.LabelFor(m => m.HomeTown, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.HomeTown, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.HomeTown, "", new { @class = "text-danger" })
+            </div>
+            
+            @Html.LabelFor(m => m.BirthDate, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.BirthDate, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.BirthDate, "", new { @class = "text-danger" })
+            </div>
+            
+
         </div>
+
+
         <div class="row">
             <div class="offset-md-2 col-md-10">
                 <input type="submit" class="btn btn-outline-dark" value="Register" />
